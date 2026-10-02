@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="order-2 md:order-1 animate-riseIn" style={{ animationDelay: '0.05s', opacity: 0 }}>
           <p className="mb-5 flex items-center gap-2 text-sm text-signal-soft font-mono">
             <span className="h-1.5 w-1.5 rounded-full bg-signal animate-pulse" />
-            Open to cybersecurity internships
+            Open to Cloud Security internships & junior roles
           </p>
           <h1 className="font-display text-[2.6rem] leading-[1.08] text-ink sm:text-6xl">
             {profile.fullName.split(' ').slice(0, 2).join(' ')}

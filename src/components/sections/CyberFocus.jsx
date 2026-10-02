@@ -12,13 +12,13 @@ export default function CyberFocus() {
       <div className="pointer-events-none absolute inset-0 grain-line opacity-[0.25]" aria-hidden="true" />
       <div className="relative mx-auto max-w-content px-5 sm:px-8">
         <div data-reveal className="reveal mb-14 max-w-[56ch]">
-          <p className="font-mono text-xs text-brass-soft">Cybersecurity Focus</p>
+          <p className="font-mono text-xs text-brass-soft">Cloud Security Focus</p>
           <h2 className="mt-3 font-display text-3xl text-ink sm:text-4xl">
-            Practicing offense, in controlled environments.
+            Securing cloud environments, hands-on.
           </h2>
           <p className="mt-4 text-ink-muted">
-            My security training centers on penetration testing and vulnerability assessment — working through lab
-            environments and real-world attack scenarios with the same tools used in the field.
+            My focus is AWS Cloud Security — access control, network design, and visibility into what happens in an
+            account — built on a penetration testing background that taught me how systems get attacked.
           </p>
         </div>
 
