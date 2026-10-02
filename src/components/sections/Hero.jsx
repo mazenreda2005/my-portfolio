@@ -1,6 +1,6 @@
 import { ArrowDown, Download, Mail } from 'lucide-react'
 import { profile } from '../../data/portfolio'
-import photo from '../../assets/mazen-photo.jpg'
+import photo from '../../assets/mazen-portrait.jpg'
 
 export default function Hero() {
   const scrollTo = (href) => {
@@ -71,17 +71,17 @@ export default function Hero() {
         </div>
 
         <div className="order-1 md:order-2 animate-riseIn" style={{ animationDelay: '0.2s', opacity: 0 }}>
-          <div className="relative mx-auto max-w-[320px] md:max-w-none">
+          <div className="relative mx-auto w-full max-w-[300px] sm:max-w-[340px]">
             <div className="absolute -inset-3 rounded-2xl border border-base-border" aria-hidden="true" />
-            <div className="absolute -bottom-4 -left-4 hidden sm:block rounded-lg border border-brass/30 bg-base-panel/90 backdrop-blur px-4 py-2.5 shadow-xl shadow-black/40">
+            <div className="absolute -bottom-4 -left-4 z-10 hidden sm:block rounded-lg border border-brass/30 bg-base-panel/90 backdrop-blur px-4 py-2.5 shadow-xl shadow-black/40">
               <p className="font-mono text-[11px] text-brass-soft">MSA University</p>
               <p className="text-xs text-ink-muted">Computer Science · 2027</p>
             </div>
-            <div className="relative overflow-hidden rounded-xl border border-base-border bg-base-panel">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-xl border border-base-border bg-base-panel">
               <img
                 src={photo}
                 alt="Portrait of Mazen Reda"
-                className="h-full w-full object-cover grayscale-[15%] contrast-[1.05]"
+                className="h-full w-full object-cover object-top grayscale-[15%] contrast-[1.05]"
                 width={480}
                 height={600}
               />

@@ -128,6 +128,50 @@ export const education = {
 
 export const projects = [
   {
+    name: 'AWS Secure Landing Zone',
+    featured: true,
+    description:
+      'A secure-by-default AWS foundation in Terraform: a three-tier VPC, multi-region CloudTrail, KMS encryption, GuardDuty, and seven CIS Benchmark alarms that email the team on high-risk events.',
+    contribution:
+      'Designed the network segmentation and least-privilege KMS key policy, added CloudWatch alarms for root login, console login without MFA, and CloudTrail tampering. Checkov: 179 checks passed, 0 failed.',
+    tech: ['AWS', 'Terraform', 'CloudTrail', 'KMS', 'GuardDuty', 'VPC'],
+    github: 'https://github.com/mazenreda2005/aws-secure-landing-zone',
+    live: null,
+  },
+  {
+    name: 'S3 Security Scanner',
+    featured: true,
+    description:
+      'A Python CLI that audits every S3 bucket in an AWS account across all regions and produces an HTML report with a security score, prioritized findings, and copy-paste fixes.',
+    contribution:
+      'Built seven checks (public policies and ACLs, Block Public Access, encryption, versioning, TLS, logging), parallel region-aware scanning, a CI fail-on-severity mode, and a test suite against mocked AWS.',
+    tech: ['Python', 'AWS', 'boto3', 'S3', 'pytest'],
+    github: 'https://github.com/mazenreda2005/s3-security-scanner',
+    live: null,
+  },
+  {
+    name: 'AWS Auto-Remediation',
+    featured: true,
+    description:
+      'Self-healing AWS security: when someone opens SSH or a database port to the internet, or makes an S3 bucket public, Lambda reverses it automatically and alerts the team on email and Slack.',
+    contribution:
+      'Wrote the EventBridge rules and Lambda functions with dry-run mode, tag-based exemptions, loop prevention, and a dead-letter queue, all deployed with least-privilege IAM in Terraform.',
+    tech: ['AWS', 'Lambda', 'EventBridge', 'Python', 'Terraform'],
+    github: 'https://github.com/mazenreda2005/aws-auto-remediation',
+    live: null,
+  },
+  {
+    name: 'DevSecOps Pipeline',
+    featured: true,
+    description:
+      'A GitHub Actions pipeline where every push is scanned for leaked secrets, insecure code, IaC misconfigurations, and vulnerable container images before anything deploys to AWS.',
+    contribution:
+      'Set up Gitleaks, Bandit, Checkov, and Trivy as blocking gates with results in the GitHub Security tab, an SBOM per build, and OIDC deployment so no AWS keys are stored in GitHub.',
+    tech: ['GitHub Actions', 'DevSecOps', 'Docker', 'Terraform', 'AWS'],
+    github: 'https://github.com/mazenreda2005/devsecops-pipeline',
+    live: null,
+  },
+  {
     name: 'Network Sniffer & Packet Analyzer',
     description:
       'A Python packet capture tool built on raw AF_PACKET sockets with no external libraries, parsing Ethernet, IPv4/IPv6, TCP, UDP, and ICMP headers byte-by-byte.',
